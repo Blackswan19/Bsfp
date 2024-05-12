@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Your+Selected+Font&display=swap">
+<title>Pk</title>
+<style>
+    body {
+    font-family: 'Your Selected Font', serif;
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.menubar{
+    z-index: 1;
+    position: fixed;
+    right: -13%;
+    top: 4%;
+    background: white;
+    width: 30%;
+    padding: 13px 43px;
+    border: solid 1.5px black;
+}
+.menubar a{
+    color: black;
+    padding: 0px 17px;
+    font-size: 19px;
+    position: relative;
+    left: -8%;
+
+}
+  img {
+    TOP: 1px;
+    left: -118px;
+    position: fixed;
+    width: 115%;
+}
+p{
+    COLOR: white;
+    position: absolute;
+    font-size: 187px;
+    bottom: -21%;
+}
+@media screen and (max-width: 760px){
+    img{
+        TOP: 1px;
+        position: fixed;
+        width: 420%;
+        left: -165%;
+    }
+    p {
+    COLOR: white;
+    position: fixed;
+    font-size: 51px;
+    bottom: 0%;
+}
+.menubar {
+    position: fixed;
+    display: flow;
+    line-height: 29px;
+    left: 73%;
+}
+.menubar a{
+    position: relative;
+    left: -47%;
+    font-size: 15px;
+}
+}
+</style>
+</head>
+<body>
+    <div class="allone">
+        <div class="menubar">
+            <a href="#video"id="video">Videos</a>
+            <a href="#wallpapers" id="Wallpapers">Wallpapers</a>
+            <a href="#aboutpk" id="aboutLink">About pk</a>
+            <script>
+            document.getElementById("aboutLink").addEventListener("click", function(event){
+                event.preventDefault(); 
+                alert("Pawan Kalyan is a big deal in the Telugu film industry. He's not just an actor; he's also a director, writer, and political activist. Born in 1971, he comes from a family of actors, including his brother Chiranjeevi, who is also a superstar. Pawan Kalyan got his start in acting in the mid-'90s, but it was his movie Tholi Prema that really put him on the map. Since then, he's been in many hit films like Gabbar Singh and Attarintiki Daredi, where he's known for his action scenes and his unique way of delivering dialogue. Outside of acting, he's made a splash in politics too. He founded the Jana Sena Party in 2014, aiming to bring about change in Andhra Pradesh and Telangana. He's run for office and campaigned for various causes, earning a lot of support along the way. In short, Pawan Kalyan is not just a movie star; he's also a force to be reckoned with in the political arena.");
+            });
+            document.getElementById("Wallpapers").addEventListener("click", function(event){
+                event.preventDefault(); 
+                alert("Coming soon.");
+            });
+            document.getElementById("video").addEventListener("click", function(event){
+                event.preventDefault(); 
+                alert("Coming soon.");
+            });
+            </script>
+        </div>
+        <div class="bg">
+            <img src="bg.png" alt="Your Image">
+            <p>PAWAN KALYAN</p>
+        </div>
+    </div>
+</body>
+</html>
