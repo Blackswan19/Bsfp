@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DTT</title>
+<script>
+    window.onload = function() {
+        // Get today's date
+        var today = new Date();
+        
+        // Check if today is Friday
+        if (today.getDay() === 5) { // 0 for Sunday, 1 for Monday, ..., 5 for Friday
+            // Add Rs. 40
+            var currentAmount = parseInt(document.getElementById("amount").innerHTML);
+            var newAmount = currentAmount + 40;
+            document.getElementById("amount").innerHTML = newAmount;
+        }
+    }
+</script>
+</head>
+<body>
+    <h1>Withdraw amount:</h1>
+    <p id="amount">0</p>
+</body>
+</html>
